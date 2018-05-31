@@ -6,9 +6,11 @@ This project solves the lack of an Angular 6 based ASP NET Core project template
 1. Git clone this repo
 1. Install the template `dotnet new --install .\content`
 1. Create a directory where you would like to store the project
-1. type `dotnet new Core2Angular6 -n <name_of_your_project>
-1. cd into your project and open the solution
+1. Type `dotnet new Core2Angular6 -n <name_of_your_project>
+1. Open the solution and run the project
 1. **Enjoy coding!**
+
+(NOTE: VS should install all node dependencies for you but you might have to run manually 'npm install' if there are unresolved dependencies.)
 
 ### Update Angular CLI
 1. npm uninstall -g angular-cli
