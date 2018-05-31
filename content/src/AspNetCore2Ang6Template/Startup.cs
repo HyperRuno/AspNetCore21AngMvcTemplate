@@ -1,24 +1,19 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
+using Swashbuckle.AspNetCore.Swagger;
+using System;
+using System.IO;
 
 namespace AspNetCore2Ang6Template
 {
-    public class Startup
-    {
-      
-
+  public class Startup
+  {
     public void ConfigureServices(IServiceCollection services)
     {
 
       services.AddMvc();
 
-      // Register the Swagger generator, defining one or more Swagger documents
       services.AddSwaggerGen(c =>
       {
         c.SwaggerDoc("v1", new Info
@@ -26,29 +21,37 @@ namespace AspNetCore2Ang6Template
           Version = "v1",
           Title = "AspNetCore2Ang6Template API",
           Description = "A simple example ASP.NET Core Web API",
-          TermsOfService = "None",
-          Contact = new Contact { Name = "Juan García Carmona", Email = "d.jgc.it@gmail.com", Url = "https://solera.com" },
+          Contact = new Contact { Name = "Juan García Carmona", Email = "d.jgc.it@gmail.com", Url = "https://wisegeckos.com" },
         });
         // Set the comments path for the Swagger JSON and UI.
         var basePath = AppContext.BaseDirectory;
-        var xmlPath = Path.Combine(basePath, "netcore2_api_template.xml");
+        var xmlPath = Path.Combine(basePath, "AspNetCore2Ang6Template.xml");
         c.IncludeXmlComments(xmlPath);
       });
     }
 
-    // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
     public void Configure(IApplicationBuilder app, IHostingEnvironment env)
-        {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
+    {
+      if (env.IsDevelopment())
+      {
+        app.UseDeveloperExceptionPage();
+      }
 
+      app.UseDefaultFiles();
+      app.UseStaticFiles();
 
-            app.UseDefaultFiles();
-            app.UseStaticFiles();
+      // Enable middleware to serve generated Swagger as a JSON endpoint.
+      app.UseSwagger();
 
-            app.UseMvc();
-        }
+      // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), specifying the Swagger JSON endpoint.
+      app.UseSwaggerUI(c =>
+      {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+      });
+
+      app.UseMvc();
+
+      app.UseMvc();
     }
+  }
 }
