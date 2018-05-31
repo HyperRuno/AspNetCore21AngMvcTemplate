@@ -1,9 +1,9 @@
 {
   "author": "Juan García Carmona",
-  "classifications": [ "Web" ],
-  "name": "ASP .NET Core 2 With Angular 6 template",
+  "classifications": [ "Web", "MVC", "SPA" ],
+  "name": "ASP.NET Core 2.1 with Angular 6",
   "identity": "AspNetCore2Ang6Template",        // Unique name for this template
-  "shortName": "Core2Angular6",  // Short name that can be used on the cli
+  "shortName": "angular6",  // Short name that can be used on the cli
   "tags": {
       "language": "C#"                     // Specify that this template is in C#.
   },

@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.DependencyInjection;
 using Swashbuckle.AspNetCore.Swagger;
 using System;
@@ -19,6 +20,10 @@ namespace AspNetCore2Ang6Template
     public void ConfigureServices(IServiceCollection services)
     {
       services.AddMvc();
+      services.AddSpaStaticFiles(c =>
+      {
+        c.RootPath = "wwwroot";
+      });
 
       services.AddSwaggerGen(c =>
       {
@@ -59,10 +64,25 @@ namespace AspNetCore2Ang6Template
       {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
       });
+      app.UseStaticFiles();
+      app.UseSpaStaticFiles();
+      app.UseMvc(routes =>
+      {
+        routes.MapRoute(name: "default", template: "{controller}/{action=index}/{id}");
+      });
 
-      app.UseMvc();
+      app.UseSpa(spa =>
+      {
+        // To learn more about options for serving an Angular SPA from ASP.NET Core,
+        // see https://go.microsoft.com/fwlink/?linkid=864501
 
-      app.UseMvc();
+        spa.Options.SourcePath = "wwwroot";
+
+        if (env.IsDevelopment())
+        {
+          spa.UseAngularCliServer(npmScript: "start");
+        }
+      });
     }
   }
 }

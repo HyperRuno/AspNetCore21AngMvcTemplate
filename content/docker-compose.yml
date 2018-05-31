@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  aspnetcore2ang6template:
+    image: ${DOCKER_REGISTRY}aspnetcore2ang6template
+    build:
+      context: .
+      dockerfile: src/AspNetCore2Ang6Template/Dockerfile
