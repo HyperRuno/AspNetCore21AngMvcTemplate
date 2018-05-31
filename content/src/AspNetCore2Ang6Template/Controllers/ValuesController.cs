@@ -1,19 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+using System.Collections.Generic;
 
 namespace AspNetCore2Ang6Template.Controllers
 {
-    public class ValuesController : Controller
+  /// <summary>
+  /// Values Controller
+  /// </summary>
+  /// <seealso cref="Microsoft.AspNetCore.Mvc.Controller" />
+  public class ValuesController : Controller
+  {
+    /// <summary>
+    /// Gets some values.
+    /// </summary>
+    /// <returns>A collection of values</returns>
+    public IEnumerable<string> Get()
     {
-        // GET: /<controller>/
-        public IActionResult Index()
-        {
-            return View();
-        }
+      return new string[] { "value1", "value2" };
     }
+  }
 }

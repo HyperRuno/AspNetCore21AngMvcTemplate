@@ -1,5 +1,14 @@
 # AspNetCore2Ang6Template
-This project solves the lack of an Angular 6 based ASP NET Core project template in Visual Studio
+This project solves the lack of an Angular 6 based ASP NET Core project template in Visual Studio. 
+
+This template includes:
+
+1. Net Core API (basic, with ValuesController as usual)
+2. Swagger (navigate to your '/swagger')
+3. Angular 6 project with Angular CLI (6.0.7) 
+	1. MDBootstrap
+	2. ngx-mapbox-gl
+	3. rxjs & rxjs-compat
 
 ### Install from the git repo
 

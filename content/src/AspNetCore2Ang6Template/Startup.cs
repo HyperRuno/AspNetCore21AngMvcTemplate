@@ -7,11 +7,17 @@ using System.IO;
 
 namespace AspNetCore2Ang6Template
 {
+  /// <summary>
+  /// Startup class
+  /// </summary>
   public class Startup
   {
+    /// <summary>
+    /// Configures app the services.
+    /// </summary>
+    /// <param name="services">The services.</param>
     public void ConfigureServices(IServiceCollection services)
     {
-
       services.AddMvc();
 
       services.AddSwaggerGen(c =>
@@ -30,6 +36,11 @@ namespace AspNetCore2Ang6Template
       });
     }
 
+    /// <summary>
+    /// Configures the application.
+    /// </summary>
+    /// <param name="app">The application.</param>
+    /// <param name="env">The hosting environment</param>
     public void Configure(IApplicationBuilder app, IHostingEnvironment env)
     {
       if (env.IsDevelopment())
