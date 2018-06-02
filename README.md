@@ -11,6 +11,12 @@ This template includes:
 	3. rxjs & rxjs-compat 
 4. Docker support (just select docker-compose as startup project and run it)
 
+### Prerequisites
+1. Microsoft .NET Core SDK 2.1 (https://www.microsoft.com/net/download/windows)
+1. Docker (only if you want to use it with Docker, https://www.docker.com/community-edition)
+1. Visual Studio (Code || Professional || Enterprise)
+1. Node (8.x) and npm
+
 ### Install from the git repo
 
 1. Git clone this repo
@@ -21,11 +27,6 @@ This template includes:
 1. **Enjoy coding!**
 
 (NOTE: VS should install all node dependencies for you but you might have to run manually 'npm install' if there are unresolved dependencies.)
-
-### Update Angular CLI
-1. npm uninstall -g angular-cli
-1. npm cache clean --force 
-1. npm install -g @angular/cli@latest
 
 ### Hints
 HMR has changes and does not work as before when we mix .Net Core and Angular 6, The Host only serves static files.
