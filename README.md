@@ -23,7 +23,9 @@ This template includes:
 1. Install the template `dotnet new --install .\content`
 1. Create a directory where you would like to store the project
 1. Type `dotnet new angular6 -n <name_of_your_project>
-1. Open the solution and run the project
+1. Open the solution and then go to your project properties
+1. In Build section mark XML documentation file (needed for Swagger documentation)
+1. Run it.
 1. **Enjoy coding!**
 
 (NOTE: VS should install all node dependencies for you but you might have to run manually 'npm install' if there are unresolved dependencies.)
