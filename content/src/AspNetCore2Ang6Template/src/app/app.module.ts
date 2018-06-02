@@ -15,7 +15,7 @@ import { DisplayMapComponent } from './components/displayMap/displayMap.componen
     BrowserModule,
     MDBBootstrapModule.forRoot(),
     NgxMapboxGLModule.forRoot({
-      accessToken: 'pk.eyJ1Ijoid2lzZWdlY2tvcyIsImEiOiJjamhteWU1bHYwNml1M2RudTIwOWplaHd3In0.S-Hvc86icRq5qi3jzB-7Vw', // Can also be set per map (accessToken input of mgl-map)
+      accessToken: 'YOUR ACCESS TOKEN GOES HERE', // Can also be set per map (accessToken input of mgl-map)
       geocoderAccessToken: 'TOKEN' // Optionnal, specify if different from the map access token, can also be set per mgl-geocoder (accessToken input of mgl-geocoder)
     })
   ],
