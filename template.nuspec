@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
-        <id>AspNetCore2Ang6Template</id>
+        <id>AspNetCore2AngMvcTemplate</id>
         <version>0.0.1</version>
-        <description>.NET Core API Template with logging and a Swagger interface as well as an Angular 6 web application that includes Angular Material Bootstrap and Ngx-mapbox-gl </description>
+        <description>.NET Core API Template with logging and a Swagger interface as well as an Angular web application that includes Angular Material Bootstrap and Ngx-mapbox-gl </description>
         <authors>Josh Staley (joshua.staley@autopoint.com</authors>
         <language>en-US</language>
         <projectUrl>https://github.com/JuanGarciaCarmona/AspNetCore2Ang6Template</projectUrl>

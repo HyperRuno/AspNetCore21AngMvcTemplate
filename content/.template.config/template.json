@@ -1,13 +1,13 @@
 {
   "author": "Juan García Carmona",
   "classifications": [ "Web", "MVC", "SPA" ],
-  "name": "ASP.NET Core 2.1 with Angular 6",
-  "identity": "AspNetCore2Ang6Template",        // Unique name for this template
-  "shortName": "angular6",  // Short name that can be used on the cli
+  "name": "ASP.NET Core 2.1 with Angular 7",
+  "identity": "AspNetCore2AngMvcTemplate",        // Unique name for this template
+  "shortName": "angular-mvc",  // Short name that can be used on the cli
   "tags": {
       "language": "C#"                     // Specify that this template is in C#.
   },
-  "sourceName": "AspNetCore2Ang6Template",      
+  "sourceName": "AspNetCore2AngMvcTemplate",      
   "preferNameDirectory" : "true"
 
 }
