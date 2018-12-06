@@ -22,7 +22,7 @@ This template includes:
 1. Git clone this repo
 1. Install the template `dotnet new --install .\content`
 1. Create a directory where you would like to store the project
-1. Type `dotnet new angular-mvc -n <name_of_your_project>
+1. Type `dotnet new angularmvc -n <name_of_your_project>
 1. Open src/YourProject from a console and run:
 	1.- npm isntall
 	1.- npm install node-sass
