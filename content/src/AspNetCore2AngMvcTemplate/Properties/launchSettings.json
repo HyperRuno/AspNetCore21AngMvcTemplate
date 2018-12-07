@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "AspNetCore2Ang6Template": {
+    "AspNetCore2AngMvcTemplate": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

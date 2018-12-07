@@ -1,14 +1,14 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <TypeScriptToolsVersion>2.8</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>3.1</TypeScriptToolsVersion>
     <TypeScriptCompilerBlocked>true</TypeScriptCompilerBlocked>
     <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\netcoreapp2.0\AspNetCore2Ang6Template.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\netcoreapp2.0\AspNetCore2AngMvcTemplate.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

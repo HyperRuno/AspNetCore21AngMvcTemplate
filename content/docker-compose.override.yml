@@ -1,7 +1,7 @@
 version: '3.4'
 
 services:
-  aspnetcore2ang6template:
+  aspnetcore2angmvctemplate:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
     ports:
