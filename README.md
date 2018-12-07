@@ -24,10 +24,10 @@ This template includes:
 1. Create a directory where you would like to store the project
 1. Type `dotnet new angularmvc -n <name_of_your_project>
 1. Open src/YourProject from a console and run:
-	1.- npm isntall
-	1.- npm install node-sass
-	1.- npm install @angular/cli
-	1.- ng build
+	1. `npm install`
+	1. `npm install node-sass`
+	1. `npm install @angular/cli`
+	1. `ng build`
 1. Open the solution and then go to your project properties
 1. In Build section mark XML documentation file (needed for Swagger documentation)
 1. Run it.
