@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
-namespace AspNetCore2Ang6Template.Controllers
+namespace AspNetCore2AngMvcTemplate.Controllers
 {
   /// <summary>
   /// Values Controller

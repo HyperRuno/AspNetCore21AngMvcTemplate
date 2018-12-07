@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore2Ang6Template", "src\AspNetCore2Ang6Template\AspNetCore2Ang6Template.csproj", "{E33A3E9E-3A19-43E6-8E96-26248DFEBAED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore2AngMvcTemplate", "src\AspNetCore2AngMvcTemplate\AspNetCore2AngMvcTemplate.csproj", "{E33A3E9E-3A19-43E6-8E96-26248DFEBAED}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{3227CD73-E6FD-4E31-A1E5-750BD3D316DA}"
 EndProject

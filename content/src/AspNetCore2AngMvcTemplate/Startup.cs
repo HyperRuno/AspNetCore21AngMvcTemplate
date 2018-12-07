@@ -6,7 +6,7 @@ using Swashbuckle.AspNetCore.Swagger;
 using System;
 using System.IO;
 
-namespace AspNetCore2Ang6Template
+namespace AspNetCore2AngMvcTemplate
 {
   /// <summary>
   /// Startup class
@@ -30,13 +30,13 @@ namespace AspNetCore2Ang6Template
         c.SwaggerDoc("v1", new Info
         {
           Version = "v1",
-          Title = "AspNetCore2Ang6Template API",
+          Title = "AspNetCore2AngMvcTemplate API",
           Description = "A simple example ASP.NET Core Web API",
           Contact = new Contact { Name = "Juan García Carmona", Email = "d.jgc.it@gmail.com", Url = "https://wisegeckos.com" },
         });
         // Set the comments path for the Swagger JSON and UI.
         var basePath = AppContext.BaseDirectory;
-        var xmlPath = Path.Combine(basePath, "AspNetCore2Ang6Template.xml");
+        var xmlPath = Path.Combine(basePath, "AspNetCore2AngMvcTemplate.xml");
         c.IncludeXmlComments(xmlPath);
       });
     }

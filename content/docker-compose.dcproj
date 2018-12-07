@@ -6,7 +6,7 @@
     <ProjectGuid>3227cd73-e6fd-4e31-a1e5-750bd3d316da</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}</DockerServiceUrl>
-    <DockerServiceName>aspnetcore2ang6template</DockerServiceName>
+    <DockerServiceName>aspnetcore2angmvctemplate</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.override.yml">

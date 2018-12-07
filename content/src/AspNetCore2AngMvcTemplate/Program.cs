@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace AspNetCore2Ang6Template
+namespace AspNetCore2AngMvcTemplate
 {
   /// <summary>
   /// Main App entry point

@@ -13,12 +13,12 @@ RUN curl -SL "https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}-lin
     && npm i -g @angular/cli npm i -g @angular/cli
 
 # Copy csproj and restore as distinct layers
-COPY src/AspNetCore2Ang6Template/ ./AspNetCore2Ang6Template/
-RUN cd AspNetCore2Ang6Template \
+COPY src/AspNetCore2AngMvcTemplate/ ./AspNetCore2AngMvcTemplate/
+RUN cd AspNetCore2AngMvcTemplate \
     && dotnet restore \
     && npm install
 
-RUN cd AspNetCore2Ang6Template \
+RUN cd AspNetCore2AngMvcTemplate \
     && dotnet publish -c Release -o out
 
 # build runtime image
@@ -37,4 +37,4 @@ RUN curl -SL "https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}-lin
     && npm i -g @angular/cli
 
 COPY --from=build-env /app/out .
-ENTRYPOINT ["dotnet", "AspNetCore2Ang6Template.dll"]
+ENTRYPOINT ["dotnet", "AspNetCore2AngMvcTemplate.dll"]
