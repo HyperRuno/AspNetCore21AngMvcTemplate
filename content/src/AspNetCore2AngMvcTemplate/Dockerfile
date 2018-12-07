@@ -10,7 +10,7 @@ RUN curl -SL "https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}-lin
     && tar -xzf "nodejs.tar.gz" -C /usr/local --strip-components=1 \
     && rm nodejs.tar.gz \
     && ln -s /usr/local/bin/node /usr/local/bin/nodejs\
-    && npm i -g @angular/cli npm i -g @angular/cli
+    && npm i -g @angular/cli
 
 # Copy csproj and restore as distinct layers
 COPY src/AspNetCore2AngMvcTemplate/ ./AspNetCore2AngMvcTemplate/
@@ -36,5 +36,5 @@ RUN curl -SL "https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}-lin
     && ln -s /usr/local/bin/node /usr/local/bin/nodejs\
     && npm i -g @angular/cli
 
-COPY --from=build-env /app/out .
+COPY --from=build-env /app/AspNetCore2AngMvcTemplate/out .
 ENTRYPOINT ["dotnet", "AspNetCore2AngMvcTemplate.dll"]
